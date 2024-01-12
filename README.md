@@ -1,0 +1,2 @@
+# vállalkozás
+ja
