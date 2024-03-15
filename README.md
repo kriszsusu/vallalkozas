@@ -1,2 +1,2 @@
 # vállalkozás
-Egy online vállalkozás (fiktív), ahol discord nitrókat árulunk a lehető legjobb áron.
+Egy online vállalkozás (fiktív), ahol apple szolgáltatásokat és felújított készülékeket árulunk kiemelkedő áron.
