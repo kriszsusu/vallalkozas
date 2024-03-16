@@ -24,24 +24,20 @@ body {
     background-color: rgb(245, 245, 247);
 }
 
-.cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: none;
-    position: relative;
-}
-
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(228, 228, 228, 0.274);
     width: 100%;
-    position: fixed;
     color: rgb(199, 192, 192);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+}
+
+.fixed {
+    position:fixed;
+    top:0;
 }
 
 .nav{
@@ -52,7 +48,6 @@ header {
     justify-content: center;
     transition: all ease 0.3s;
 }
-
 
 .links ul {
     padding: 0 10px 0 10px;
@@ -70,8 +65,9 @@ header {
     cursor: pointer;
 }
 
-.icon:hover {
-    color: white;
+.icon img {
+    width:25px;
+    aspect-ratio: 1;
 }
 
 .links ul li {
@@ -132,8 +128,6 @@ a, a::after{
     margin: 10px 0 10px 5px;
 }
 
-
-
 .main_page {
     display: flex;
     align-items: center;
@@ -141,6 +135,7 @@ a, a::after{
     flex-direction: column;
     text-align: center;
     background-color: rgb(242,242,244);
+    height:80%;
 }
 
 .main_page .main_page_head .main_head {
@@ -151,7 +146,8 @@ a, a::after{
 .plus_offer {
     font-size: 27px;
     font-weight: 400;
-    color:  rgb(95, 92, 92);;
+    color:  rgb(95, 92, 92);
+    margin-top:20px;
 }
 
 .main_shop {
@@ -184,7 +180,7 @@ a, a::after{
     align-items: center;
     flex-direction: column;
     height: 105vh;
-    background: url('./assets/second_back.jpg');
+    background: url('./assets/images/second_back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -214,7 +210,7 @@ a, a::after{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background: url('./assets/iphone_wonderful_back_s.jpg');
+    background: url('./assets/images/iphone_wonderful_back_s.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -251,10 +247,8 @@ a, a::after{
     text-align: center;
 }
 
-
-
 .features .easy .image{
-    background-image: url(./assets/easy_feature_back.jpg);
+    background-image: url(./assets/images/easy_feature_back.jpg);
     width: 558px;
     height: 300px;
     background-size: 558px 300px;
@@ -294,7 +288,7 @@ a, a::after{
 .mac_air_15 .image {
     height: 100%;
     width: 100%;
-    background-image: url(./assets/mac_air_15.jpg);
+    background-image: url(./assets/images/mac_air_15.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -326,7 +320,7 @@ a, a::after{
     align-items: center;
     /* justify-content: space-around; */
     flex-direction: column;
-    background: url('./assets/watch_8.jpg');
+    background: url('./assets/images/watch_8.jpg');
     background-size: cover;
     text-align: center;
     background-position: center;
@@ -337,7 +331,7 @@ a, a::after{
     height: 100%;
     width: 49%;
     background-color: rgb(1,1,0);
-    background-image: url("./assets/ipad.jpg");
+    background-image: url("./assets/images/ipad.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -405,7 +399,7 @@ a, a::after{
 .airpods_trade .airpods {
     height: 100%;
     width: 49%;
-    background-image: url('./assets/airpods_back.jpg');
+    background-image: url('./assets/images/airpods_back.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -416,7 +410,7 @@ a, a::after{
 .airpods_trade .iphone_trade {
     height: 100%;
     width: 49%;
-    background-image: url('./assets//iphone_trade.jpg');
+    background-image: url('./assets/images/iphone_trade.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -434,4 +428,14 @@ a, a::after{
 
 .airpods .iphone_links {
     font-size: 30px;
+}
+
+footer{
+    padding:20px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    color:#555;
 }
